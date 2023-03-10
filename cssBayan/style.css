@@ -43,6 +43,7 @@ body {
 
 .bayan-icon {
     transform: rotate(90deg);
+    visibility: hidden;
 }
 
 .bayan-item-content {
