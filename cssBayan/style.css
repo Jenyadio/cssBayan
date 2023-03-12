@@ -9,6 +9,7 @@
 body {
     background-color: rgb(245, 237, 228);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -60,7 +61,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     border: none;
-
+    outline: 0;
+    cursor: pointer;
 }
 
 .first-img {
@@ -99,4 +101,23 @@ body {
 
 .bayan-item:hover .bayan-item-content {
     max-height: 20em;
+}
+
+@media (max-width: 480px) {
+    .bayan-wrapper {
+        max-width: 20em;
+    }
+
+    .bayan-img {
+        width: 20em;
+        height: 20em;
+    }
+
+    .third-img {
+        background-size: 15em 15em;
+    }
+
+    .fifth-img {
+        background-size: 15em 15em;
+    }
 }
