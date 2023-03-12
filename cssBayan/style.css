@@ -32,6 +32,7 @@ body {
 .bayan-header {
     display: flex;
     justify-content: space-between;
+    font-size: 1rem;
     background-color: rgb(230, 208, 178);
     padding: 1em;
     border-radius: 0.5em;
@@ -108,6 +109,10 @@ body {
         max-width: 20em;
     }
 
+    .bayan-header {
+        font-size: 12px;
+    }
+
     .bayan-img {
         width: 20em;
         height: 20em;
@@ -119,5 +124,17 @@ body {
 
     .fifth-img {
         background-size: 15em 15em;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .bayan-header {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .bayan-header {
+        font-size: 18px;
     }
 }
