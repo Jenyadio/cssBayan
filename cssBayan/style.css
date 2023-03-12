@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(245, 237, 228);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.bayan-wrapper {
+    max-width: 30em;
+}
+
+.bayan {
+    width: 100%;
+    margin-top: 3em;
+}
+
+.bayan li {
+    list-style: none;
+    margin-bottom: 1em;
+}
+
+.bayan-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    background-color: rgb(230, 208, 178);
+    padding: 1em;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.bayan-header + input[type="radio"] {
+    display: none;
+}
+
+.bayan-icon {
+    transform: rotate(90deg);
+    visibility: hidden;
+}
+
+.bayan-item-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.bayan-img {
+    width: 30em;
+    height: 25em;
+    background-size: contain;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+}
+
+.first-img {
+    background-image: url('./img/senior-vs-junior.png');
+}
+
+.second-img {
+    background-image: url('./img/challenge-accepted.png');
+}
+
+.third-img {
+    background-image: url('./img/samurai.png');
+    background-size: 20em 20em;
+}
+
+.fourth-img {
+    background-image: url('./img/success.png');
+}
+
+.fifth-img {
+    background-image: url('./img/waiting.png');
+    background-size: 20em 20em;
+}
+
+.bayan-header + input[type="radio"]:checked + .bayan-item-content {
+    max-height: 20em;
+}
+
+
+.bayan:hover span {
+    visibility: visible;
+}
+
+
+@media (max-width: 480px) {
+    .bayan-wrapper {
+        max-width: 20em;
+    }
+
+    .bayan-header {
+        font-size: 12px;
+    }
+
+    .bayan-img {
+        width: 20em;
+        height: 20em;
+    }
+
+    .third-img {
+        background-size: 15em 15em;
+    }
+
+    .fifth-img {
+        background-size: 15em 15em;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .bayan-header {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .bayan-header {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 640px) {
+    .bayan:hover {
+        color: rgb(179, 99, 8);
+    }
+
+    .bayan-item:hover .bayan-item-content {
+        max-height: 20em;
+    }
+}
